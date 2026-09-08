@@ -20,12 +20,7 @@
         <input type="email" name="email" id="courriel" /><br />
 
         <label for="motDePasse">Mot de passe:</label>
-        <input
-          type="password"
-          name="password"
-          id="motDePasse"
-          minlength="8"
-        /><br />
+        <input type="password" name="password" id="motDePasse" min="8" /><br />
 
         <button>S'inscrire</button>
       </form>
@@ -35,6 +30,14 @@
     <section>
       <h2>Formulaire de contact</h2>
       <!-- À COMPLÉTER: Créer le formulaire de contact -->
+      <form action="../resultats/contact.html" method="get">
+        <label for="sujet">Sujet:</label>
+        <input type="text" name="sujet" id="sujet" /><br />
+
+        <label for="message">Message:</label><br />
+        <textarea name="message" id="message" cols="50" rows="4" placeholder="Votre message"></textarea>
+        
+      </form>
     </section>
 
     <!-- Exercice 13: Formulaire avec validation -->
