@@ -35,8 +35,13 @@
         <input type="text" name="sujet" id="sujet" /><br />
 
         <label for="message">Message:</label><br />
-        <textarea name="message" id="message" cols="50" rows="4" placeholder="Votre message"></textarea>
-        
+        <textarea
+          name="message"
+          id="message"
+          cols="50"
+          rows="4"
+          placeholder="Votre message"
+        ></textarea>
       </form>
     </section>
 
@@ -44,11 +49,38 @@
     <section>
       <h2>Formulaire de commande</h2>
       <!-- À COMPLÉTER: Créer le formulaire avec validation -->
+      <form action="../resultats/inscription.html" method="GET">
+        <input
+          type="number"
+          name="quantite"
+          id="quantite"
+          min="1"
+          max="10"
+          value="1"
+        />
+        <input type="date" name="livraison" id="livraison" required />
+        <input
+          type="text"
+          name="telephone"
+          id="telephone"
+          min="10"
+          max="10"
+        /><br />
+        <input type="checkbox" name="conditions" id="conditions" />
+        <label for="conditions">J'accepte les conditions</label>
+        <h1>Mode de paiement</h1>
+        <input type="radio" name="paiement" id="paiement1" value="carte" />
+        <input type="radio" name="paiement" id="paiement2" value="paypal" />
+        <input type="radio" name="paiement" id="paiement3" value="virement" />
+      </form>
     </section>
 
     <!-- Navigation -->
     <nav>
       <!-- À COMPLÉTER: Liens de navigation relatifs -->
+      <a href="listes.html">Listes</a>
+      <a href="multimedia.html">Multimédia</a>
+      <a href="tableaux.html">Tableaux</a>
     </nav>
   </body>
 </html>
