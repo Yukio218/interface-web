@@ -1,12 +1,16 @@
 header {
   margin: 0px;
-  height: 10vh;
+  min-height: 10vh;
   width: 100%;
   background: linear-gradient(to right, #002768, #001437);
   display: flex;
 }
 
-ul {
+.titre {
+  margin-left: 13.55%;
+}
+
+nav > ul {
   margin: 0px;
   padding: 0px;
   width: 80%;
@@ -17,7 +21,7 @@ ul {
 
 .titre > h2 {
   margin: 0px;
-  padding: 1% 20% 0% 5%;
+  padding: 2% 20% 0% 5%;
   color: white;
   width: 30vw;
 }
@@ -36,13 +40,15 @@ nav {
 }
 
 li {
-  margin: auto 2%;
+  margin: auto 1%;
+  min-width: 90px;
+  
 }
 
 li > a {
   text-decoration: none;
   margin-top: 0px;
-  padding: 1% 20% 1% 5%;
+  padding: 1% 0% 1% 0%;
   color: white;
 }
 
@@ -53,12 +59,48 @@ li > a {
 body {
   margin: 0px;
   width: 100%;
-  /*overflow-x: hidden;*/
 }
 
 footer {
+  background-color: var(--footer-bg);
+}
+
+footer > div {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  min-height: 32vh;
+}
+
+.footer-colonne {
+  min-width: 250px;
+}
+
+.footer-colonne > h5 {
+  color: var(--primary-color);
+}
+
+.footer-colonne > ul {
+  padding: 0px;
+  list-style-type: none;
+}
+
+.footer-colonne > ul > li {
   width: 100%;
 }
+
+
+.footer-colonne > ul > li > a {
+  color: var(--primary-color);
+}
+
+footer > p {
+  margin: 0px 15%;
+  padding: 16px 20%;
+  text-align: center;
+  border-top: 1px solid white;
+}
+
 
 @media (min-width: 1024px) {
   

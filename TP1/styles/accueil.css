@@ -1,20 +1,18 @@
+@import "/TP1/styles/variables.css";
+
 p,
 a,
 h1,
 h2,
 h3,
+h5,
+span,
 sub {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 main {
   width: 100%;
-}
-
-.hero-image {
-  border-radius: 9px;
-  max-width: 60%;
-  background-color: rgba(0, 0, 0, 0);
 }
 
 .hero-section {
@@ -24,16 +22,28 @@ main {
 }
 
 .hero-gauche {
-  width: 40%;
-  padding: 2%;
+  width: 30%;
+  padding: 2% 1% 2% 15%;
+}
+
+.hero-gauche > h1 {
+  color: var(--primary-color);
 }
 
 .hero-gauche > p {
-  font-size: 12px;
+  font-size: 15px;
+  padding-right: 10%; 
 }
 
 .hero-gauche > sub {
   font-size: 15px;
+}
+
+.hero-image {
+  border-radius: 9px;
+  max-width: 99%;
+  margin: 25px 50px;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .article-section {
@@ -47,11 +57,14 @@ main {
 
 article {
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  background-color: var(--background-color);
   border-radius: 16px;
   flex: 0 0 350px;
-  width: 350px;
+  min-width: 350px;
   margin: 2% 2%;
 }
+
+
 
 .card:last-child {
   margin-left: auto;
@@ -69,9 +82,24 @@ article {
   padding: 32px;
 }
 
+.article-text > h3 {
+  color: var(--primary-color);
+  margin: 0px;
+}
+
+.article-text > p {
+  margin-bottom: 40px;
+}
+
 .bouton {
-  border-radius: 8px;
-  background-color: var(--secondary-color);
+  border-radius: 25px;
+  padding: 12px 24px;
+  margin: 13px 0px;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  background: linear-gradient(to right, var(--secondary-color), #309539);
 }
 
 @media (min-width: 1024px) {
