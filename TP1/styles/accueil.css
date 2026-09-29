@@ -23,8 +23,9 @@ main {
 
 .hero-gauche {
   width: 30%;
-  padding: 2% 1% 2% 15%;
+  padding: 2% 1% 2% 12%;
 }
+
 
 .hero-gauche > h1 {
   color: var(--primary-color);
@@ -36,12 +37,15 @@ main {
 }
 
 .hero-gauche > sub {
-  font-size: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--secondary-color);
 }
 
 .hero-image {
   border-radius: 9px;
-  max-width: 99%;
+  height: 1%;
+  min-width: 350px;
   margin: 25px 50px;
   background-color: rgba(0, 0, 0, 0);
 }
@@ -63,8 +67,6 @@ article {
   min-width: 350px;
   margin: 2% 2%;
 }
-
-
 
 .card:last-child {
   margin-left: auto;
@@ -102,11 +104,37 @@ article {
   background: linear-gradient(to right, var(--secondary-color), #309539);
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
+  .hero-image {
+    margin: 25px 40px;
+  }
+
+  .hero-gauche {
+    width: 40%;
+    padding: 2% 1% 2% 2%;
+  }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+  .hero-section {
+    max-width: 100%;
+    display: block;
+  }
+
+  .hero-gauche {
+    width: 98%;
+    padding: 1% 1%;
+    margin: none;
+  }
+
+  .hero-image {
+    max-width: 98%;
+    object-fit: cover;
+    margin: 20% 1%;
+    background-color: rgba(0, 0, 0, 0);
+  }
 }
 
-@media (min-width: 480px) {
+@media (max-width: 480px) {
+  
 }
