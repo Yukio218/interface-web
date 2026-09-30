@@ -39,7 +39,7 @@ nav {
   align-items: center;
 }
 
-li {
+nav > ul > li {
   margin: auto 1%;
   min-width: 90px;
   
@@ -73,7 +73,7 @@ footer > div {
 }
 
 .footer-colonne {
-  min-width: 250px;
+  max-width: 250px;
 }
 
 .footer-colonne > h5 {
@@ -143,16 +143,25 @@ footer > p {
     padding: 2% 0px;
   }
 
-  .footer > div {
+  footer > div {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 10px 10%;
-    min-height: 32vh;
+    min-height: auto;
+  }
+
+  .footer-colonne > ul > li > span, .footer-colonne > ul > li > a  {
+    font-size: 12px;
+  }
+
+  .footer-colonne > ul, .footer-colonne > ul > li  {
+    max-width: 100%;
   }
 
   footer > p {
     margin: 0px 3%;
     padding: 16px 10%;
+    font-size: 12px;
   }
 
 

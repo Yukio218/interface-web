@@ -1,0 +1,122 @@
+@import "/TP1/styles/variables.css";
+
+p,
+a,
+h1,
+h2,
+h3,
+h5,
+span,
+sub {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+  width: 100%;
+}
+
+.titre-section {
+    padding: 2% 37%;
+    text-align: center;
+    background: linear-gradient(to right, #ededee, #eaeaea);
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+.article-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: calc(20);
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+article {
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  background-color: var(--background-color);
+  border-radius: 16px;
+  flex: 0 0 350px;
+  min-width: 350px;
+  margin: 2% 2%;
+}
+
+.card:last-child {
+  margin-left: auto;
+}
+
+.article-image {
+  height: 200px;
+  width: 100%;
+  border-radius: 16px;
+  background-color: rgba(0, 0, 0, 0);
+  object-fit: cover;
+}
+
+.article-text {
+  padding: 32px;
+}
+
+.article-text > h3 {
+  color: var(--primary-color);
+  margin: 0px;
+}
+
+.article-text > p {
+  margin-bottom: 15px;
+}
+
+.article-text > div {
+    margin: 30px 10px 50px 10px;
+}
+
+.tag-portions {
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #F2F7F3;
+}
+
+.tag-temps {
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #F2F7F3;
+}
+
+.tag-moyen {
+    padding: 10px;
+    border-radius: 30px;
+    color: #9A8A49;
+    background-color: #FEF2D0;
+}
+
+.tag-facile {
+    padding: 10px;
+    border-radius: 30px;
+    color: var(--secondary-color);
+    background-color: #8dfb967a;
+}
+
+.bouton {
+  border-radius: 25px;
+  padding: 12px 24px;
+  margin: 13px 0px;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  background: linear-gradient(to right, var(--secondary-color), #309539);
+}
+
+@media (max-width: 1024px) {
+  
+}
+
+@media (max-width: 768px) {
+  
+}
+
+@media (max-width: 480px) {
+  
+}
