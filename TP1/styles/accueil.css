@@ -1,16 +1,5 @@
 @import "/TP1/styles/variables.css";
 
-p,
-a,
-h1,
-h2,
-h3,
-h5,
-span,
-sub {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
 main {
   width: 100%;
 }
