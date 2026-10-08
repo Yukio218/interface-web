@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cuisine MOMO</title>
     <link rel="stylesheet" href="../styles/variables.css" />
-    <link rel="stylesheet" href="../styles/recettes.css" />
+    <link rel="stylesheet" href="../styles/recette-detail.css" />
     <link rel="stylesheet" href="../styles/main.css" />
   </head>
   <body>
@@ -29,95 +29,63 @@
             <a href="saisonnier.html" class="nav-nonselected">Saisonnier</a>
           </li>
           <li>
-            <a href="" class="nav-nonselected">A propos</a>
+            <a href="#blank" class="nav-nonselected">A propos</a>
           </li>
         </ul>
       </nav>
     </header>
 
-
     <main>
       <section class="titre-section">
-        <h1>Toutes les recettes</h1>
-          <p>
-            Parcourez nos idées repas et desserts. Chaque carte vous indique le temps, 
-            la portion et la difficulté.
-          </p>
+        <span class="breadcrumb"
+          ><a href="../index.html">Accueil</a> >
+          <a href="recettes.html">Recettes</a> > Poutine maison classique</span
+        >
+        <h1>Poutine maison classique</h1>
+        <p>4<br /><span>portions</span></p>
+        <p>40<br /><span>Facile</span></p>
+        <p>Facile<br /><span>difficulté</span></p>
       </section>
 
-      <section class="article-section">
-        <article>
-          <img src="../images/poutine.jpg" alt="poutine" class="article-image" />
-          <div class="article-text">
-            <h3>Poutine maison classique</h3>
+      <section class="section-tout">
+        <img src="../images/poutine-detail.jpg" alt="poutine" />
+        <div class="partie-droit">
+          <h3>Ingrédients</h3>
+          <ul>
+            <li>1 kg de frites croustillantes (maison ou sugelées)</li>
+            <li>300 g de fromage en grains</li>
+            <li>2 c. à soupe de beurre</li>
+            <li>2 c. à soupe de farine</li>
+            <li>500 ml de bouillon de boeuf</li>
+            <li>1 c. à soupe de sauce soya (optionnel)</li>
+          </ul>
+          <h3>Étapes</h3>
+          <ol>
+            <li>Préparez les frites ou à la friteuse.</li>
+            <li>
+              Dans une casserole, faites fondre le beurre, ajoutez la farine et
+              cuisez 1 minute.
+            </li>
+            <li>
+              Versez graduellement le bouillon en fouettant; mijotez jusqu'à
+              épaississement.
+            </li>
+            <li>Ajustez l'assaisonnement, ajoutez la sauce soya au besoin.</li>
+            <li>
+              Dressez : frites chaudes, fromage en grains, nappez de sauce.
+            </li>
+          </ol>
+          <h3>Conseils</h3>
+          <div class="carte-conseil">
             <p>
-              La poutine qu'on aime : frites croustillantes, fromage en grains qui couine 
-              et sauce brune maison.
+              <span>Service : </span>Servez très chaud pour un fromage bien
+              couinant. <span>Variante végétarienne : </span>remplacez par un
+              bouillon de légumes.
             </p>
-            <div>
-              <span class="tag-portions">4 portions</span>
-              <span class="tag-temps">40 min</span>
-              <span class="tag-facile">Facile</span>
-            </div>
-            <a href="pages/recettes.html" class="bouton">Voir la recette</a>
           </div>
-        </article>
 
-        <article>
-          <img
-            src="../images/salade-cesar.jpg"
-            alt="salade-cesar"
-            class="article-image"
-          />
-          <div class="article-text">
-            <h3>Salade César croquante</h3>
-            <p>
-              Laitue croquante, croûtons et une vinaigrette crémeuse. Parfaite en accompagnement.
-            </p>
-            <div>
-              <span class="tag-portions">4 portions</span>
-              <span class="tag-temps">40 min</span>
-              <span class="tag-facile">Facile</span>
-            </div>
-            <a href="pages/techniques.html" class="bouton">Voir la recette</a>
-          </div>
-        </article>
-
-        <article>
-          <img
-            src="../images/general-tao.jpg"
-            alt="saisonnier"
-            class="article-image"
-          />
-          <div class="article-text">
-            <h3>Poulet Général Tao simplifié</h3>
-            <p>Version rapide et accessible du classique sucré-salé.</p>
-            <div>
-              <span class="tag-portions">4 portions</span>
-              <span class="tag-temps">40 min</span>
-              <span class="tag-moyen">Moyen</span>
-            </div>
-            <a href="pages/saisonnier.html" class="bouton">Voir la recette</a>
-          </div>
-        </article>
-
-        <article>
-          <img
-            src="../images/brownies.jpg"
-            alt="saisonnier"
-            class="article-image"
-          />
-          <div class="article-text">
-            <h3>Brownies fondants au chocolat</h3>
-            <p>Texture moelleuse et goût intense de cacao.</p>
-            <div>
-              <span class="tag-portions">4 portions</span>
-              <span class="tag-temps">40 min</span>
-              <span class="tag-facile">Facile</span>
-            </div>
-            <a href="pages/saisonnier.html" class="bouton">Voir la recette</a>
-          </div>
-        </article>
+          <a href="pages/saisonnier.html" class="bouton">Voir la recette</a>
+        </div>
       </section>
     </main>
 
@@ -129,23 +97,27 @@
             <li>
               <span>Cégep Montmorency</span>
             </li>
-            <br>
+            <br />
             <li>
               <span>Laval, Québec</span>
             </li>
-          </ul>        
+          </ul>
         </div>
         <div class="footer-colonne">
           <h5>Contact</h5>
           <ul>
             <li>
-              <span>Téléphone: </span><a href="tel:4509756100" class="footer-lien">(450) 975-6100</a>
+              <span>Téléphone: </span
+              ><a href="tel:4509756100" class="footer-lien">(450) 975-6100</a>
             </li>
-            <br>
+            <br />
             <li>
-              <span>Courriel: </span><a href="mailto:info@cuisine-momo.ca" class="footer-lien">info@cuisine-momo.ca</a>
+              <span>Courriel: </span
+              ><a href="mailto:info@cuisine-momo.ca" class="footer-lien"
+                >info@cuisine-momo.ca</a
+              >
             </li>
-          </ul>        
+          </ul>
         </div>
         <div class="footer-colonne">
           <h5>Liens rapides</h5>
@@ -159,7 +131,7 @@
             <li>
               <span>A propos</span>
             </li>
-          </ul>        
+          </ul>
         </div>
       </div>
       <p>© 2026 Cuisine MOMO - Cégep Montmorency</p>
