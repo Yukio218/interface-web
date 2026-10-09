@@ -17,6 +17,7 @@ header {
   width: 100%;
   background: linear-gradient(to right, #002768, #001437);
   display: flex;
+  position: sticky; top: 0; z-index: 2;
 }
 
 .titre {
@@ -63,11 +64,25 @@ li > a {
   margin-top: 0px;
   padding: 1% 0% 1% 0%;
   color: white;
+  transition: opacity 0.2s;
+}
+
+li > a:hover {
+  opacity: 0.75;
 }
 
 .nav-selected {
   text-decoration: underline;
 }
+.bouton {
+  transition: all 0.3s ease;
+}
+
+.bouton:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
 
 body {
   margin: 0px;
@@ -105,6 +120,15 @@ footer > div {
 
 .footer-colonne > ul > li > a {
   color: var(--primary-color);
+}
+
+.footer-lien {
+  transition: opacity 0.2s;
+}
+
+.footer-lien:hover {
+  text-decoration: underline;
+  opacity: 0.8;
 }
 
 footer > p {
@@ -156,9 +180,7 @@ footer > p {
     padding: 2% 0px;
   }
 
-  .footer-colonne {
-    
-  }
+  
 
   footer > div {
     display: block;

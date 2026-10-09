@@ -7,7 +7,8 @@ h2,
 h3,
 h5,
 span,
-sub {
+sub,
+.partie-droit li {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -16,28 +17,76 @@ main {
 }
 
 .titre-section {
-    padding: 2% 37%;
-    text-align: center;
-    background: linear-gradient(to right, #ededee, #eaeaea);
+  padding: 2% 17%;
+  background: linear-gradient(to right, #ededee, #eaeaea);
 }
 
 h1 {
-    color: var(--primary-color);
+  color: black;
+}
+
+.stats {
+  display: flex;
+  gap: 35px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.stats > p {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin: 0px;
+}
+
+.stats > p > span {
+  font-size: 14px;
+  font-weight: normal;
+  color: #64748b;
+}
+
+.partie-droit h3 {
+  color: var(--primary-color);
 }
 
 .section-tout {
-  display: flex;
-  justify-content: center;
-  gap: calc(20);
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 40% 55%;
+  justify-content: space-between;
+  padding: 3% 20%; 
 }
 
-img {
-  height: 900px;
-  width: 40%;
-  border-radius: 16px;
-  background-color: rgba(0, 0, 0, 0);
+.section-tout img {
+  width: 100%;
+  margin-top: 18px;
+  height: 480px;
+  justify-self: right;
+  border-radius: 20px;
   object-fit: cover;
+  display: block;
+}
+
+.carte-conseil {
+  background-color: #f8fafc;
+  border-left: 4px solid #0b2545;
+  border-radius: 4px 12px 12px 4px;
+  padding: 15px 20px;
+  margin: 15px 0px 25px 0px;
+}
+
+.zone-retour {
+  padding: 0% 10% 5% 10%;
+}
+
+.bouton-retour {
+  background-color: #64748b;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 22px;
+  border-radius: 25px;
 }
 
 .bouton {
@@ -52,11 +101,23 @@ img {
 }
 
 @media (max-width: 1024px) {
-  
+  .section-tout {
+    display: grid;
+    grid-template-columns: 40% 55%;
+    padding: 3% 13%; 
+  }
 }
 
 @media (max-width: 768px) {
-  
+
+  .titre-section {
+    padding: 2% 10%;
+  }
+  .section-tout {
+    display: block;
+    grid-template-columns: 40% 55%;
+    padding: 3% 2%; 
+  }
 }
 
 @media (max-width: 480px) {

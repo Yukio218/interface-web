@@ -30,6 +30,12 @@ article {
   flex: 0 0 350px;
   min-width: 350px;
   margin: 2% 2%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 .card:last-child {
@@ -97,6 +103,7 @@ article {
   font-weight: bold;
   background: linear-gradient(to right, var(--secondary-color), #309539);
 }
+
 
 @media (max-width: 1024px) {
   
